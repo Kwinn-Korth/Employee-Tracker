@@ -9,7 +9,7 @@ const db = mysql.createConnection({
     user: process.env.DB_USER,
     password: process.env.DB_PASS,
     database: process.env.DB_DATABASE,
-    port: 3301,
+    port: 3306,
 });
 
 // Error for handling error if connection to database fails.
