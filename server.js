@@ -12,6 +12,14 @@ const db = mysql.createConnection({
     port: 3301,
 });
 
+// Error for handling error if connection to database fails.
+db.connect((error) => {
+    if (error) {
+        console.error('Error connecting to the database: ', error);
+        return;
+    }
+});
+
 // User choices for prompts.
 const choices = {
     'View All Employees': viewAllEmployees,
