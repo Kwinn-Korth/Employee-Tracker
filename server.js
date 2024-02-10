@@ -13,11 +13,10 @@ const db = mysql.createConnection({
 });
 
 // Error for handling error if connection to database fails.
-db.connect((error) => {
-    if (error) {
-        console.error('Error connecting to the database: ', error);
-        return;
-    }
+db.then(() => {
+    console.log('Connected to the database');
+}).catch(error => {
+    console.error('Error connecting to the database: ', error);
 });
 
 // User choices for prompts.
