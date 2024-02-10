@@ -1,13 +1,14 @@
 // Import packages.
 const inquirer = require('inquirer');
 const mysql = require('mysql2/promise'); 
+require('dotenv').config();
 
 // MySQL connection to database.
 const db = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: '83!2589Hyrule',
-    database: 'employee_tracker',
+    host: process.env.DB_HOST,
+    user: process.env.DB_USER,
+    password: process.env.DB_PASS,
+    database: process.env.DB_DATABASE,
     port: 3301,
 });
 
