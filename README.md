@@ -14,6 +14,6 @@ Just run npm install and then seed the database, it should be pretty simple to g
 
 To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
 
-    ```md
-    ![alt text](assets/images/screenshot.png)
-    ```
+    
+[video url](https://drive.google.com/drive/u/0/folders/1NP-xWTCg-huMbpcezRpo5U4jEkI7lRpC)
+ 
