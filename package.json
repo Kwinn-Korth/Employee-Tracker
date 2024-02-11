@@ -5,7 +5,9 @@
   "main": "server.js",
   "scripts": {
     "test": "\"test\"",
-    "start": "node server.js"
+    "start": "node server.js",
+    "setupdb": "node scripts/setup-db-script.js",
+    "seeddb": "node scripts/seed-db-script.js"
   },
   "author": "",
   "dependencies": {
